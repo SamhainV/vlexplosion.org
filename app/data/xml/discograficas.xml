@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE database SYSTEM "discograficas.dtd">
+<database>
+    <metadata>
+        <type>Database</type>
+        <name>VinylLibraryDB</name>
+        <description>Listado de discograficas</description>
+    </metadata>
+    <table>
+        <type>Table</type>
+        <name>RECORDLABELS_TBL</name>
+        <database>VinylLibraryDB</database>
+        <record_labels>
+            <record_label>4AD</record_label>
+            <record_label>Ace Records</record_label>
+            <record_label>Acme Records</record_label>
+            <record_label>Arista</record_label>
+            <record_label>Astan music AG/Luzern</record_label>
+            <record_label>Atlantic</record_label>
+            <record_label>Avispa Records</record_label>
+            <record_label>BBC</record_label>
+            <record_label>Beggars Banquet Records LTD</record_label>
+            <record_label>Beserkley Records</record_label>
+            <record_label>Big Beat</record_label>
+            <record_label>Black tulip</record_label>
+            <record_label>Bomp Records</record_label>
+            <record_label>Buto Eskor</record_label>
+            <record_label>Capitol Records</record_label>
+            <record_label>Cascade Records</record_label>
+            <record_label>Castle Communications</record_label>
+            <record_label>CBS</record_label>
+            <record_label>Chiswick Records</record_label>
+            <record_label>Chrysalis</record_label>
+            <record_label>Columbia</record_label>
+            <record_label>Combat Records</record_label>
+            <record_label>Demon Records</record_label>
+            <record_label>DRO</record_label>
+            <record_label>E.G. Records Ltd</record_label>
+            <record_label>Electrobird</record_label>
+            <record_label>EMI</record_label>
+            <record_label>Enigma Record</record_label>
+            <record_label>Epic</record_label>
+            <record_label>EVA</record_label>
+            <record_label>Factory Records</record_label>
+            <record_label>Fiction Records</record_label>
+            <record_label>Fonomusic</record_label>
+            <record_label>Food Records</record_label>
+            <record_label>Fontana</record_label>
+            <record_label>Frontier Records</record_label>
+            <record_label>G.G.G.B.H.</record_label>
+            <record_label>Geffen Records</record_label>
+            <record_label>GM Gramusic</record_label>
+            <record_label>GMG Records</record_label>
+            <record_label>Grabaciones Accidentales</record_label>
+            <record_label>Grabaciones Interferencias</record_label>
+            <record_label>Harvest</record_label>
+            <record_label>Hi-fi Discos Electronica</record_label>
+            <record_label>Hispavox</record_label>
+            <record_label>Impulse</record_label>
+            <record_label>Iberofon</record_label>
+            <record_label>Island</record_label>
+            <record_label>Jazz Life</record_label>
+            <record_label>Jet Records</record_label>
+            <record_label>Junk Records</record_label>
+            <record_label>La Fabrica Magnetica</record_label>
+            <record_label>La Rosa Records</record_label>
+            <record_label>Lazy Records</record_label>
+            <record_label>Liberty</record_label>
+            <record_label>London Records</record_label>
+            <record_label>Magnum House</record_label>
+            <record_label>Metronome Musik GMBH</record_label>
+            <record_label>Misfits Records</record_label>
+            <record_label>Movieplay</record_label>
+            <record_label>MCA Records</record_label>
+            <record_label>Munster Records</record_label>
+            <record_label>Music Manic Records</record_label>
+            <record_label>Mute Records Ltd</record_label>
+            <record_label>Nems</record_label>
+            <record_label>No lo pone</record_label>
+            <record_label>No Tomorrow Record</record_label>
+            <record_label>Norton Records</record_label>
+            <record_label>Philips</record_label>
+            <record_label>Plan 9 Records</record_label>
+            <record_label>Plangent Visions</record_label>
+            <record_label>Polydor LTD</record_label>
+            <record_label>Polygram Iberica</record_label>
+            <record_label>Ppfront</record_label>
+            <record_label>RCA</record_label>
+            <record_label>Red Star Music Inc</record_label>
+            <record_label>Rhino Records</record_label>
+            <record_label>RSO Records</record_label>
+            <record_label>Roadrunner Records</record_label>
+            <record_label>Rockstar Records</record_label>
+            <record_label>Rounder Records / DRO</record_label>
+            <record_label>Rumble Records</record_label>
+            <record_label>Running circle</record_label>
+            <record_label>Sanctuary Records</record_label>
+            <record_label>See for miles records ltd</record_label>
+            <record_label>Serdisco</record_label>
+            <record_label>Sirex</record_label>
+            <record_label>Slash Records</record_label>
+            <record_label>Speakers Corner Records</record_label>
+            <record_label>spew noise</record_label>
+            <record_label>SST Records</record_label>
+            <record_label>Stiff Records</record_label>
+            <record_label>Sun Records</record_label>
+            <record_label>Taco Tunes ASCAP / Westminster Music LTD</record_label>
+            <record_label>Tres Cipreses</record_label>
+            <record_label>United Artist Records</record_label>
+            <record_label>Vemsa</record_label>
+            <record_label>Virgin</record_label>
+            <record_label>Voxx Records</record_label>
+            <record_label>White Label</record_label>
+            <record_label>Wild Punk Records</record_label>
+            <record_label>Zafiro</record_label>
+            <record_label>Zyx Music</record_label>
+            <record_label>Zoo Entertainment</record_label>
+      </record_labels>
+    </table>
+</database>

@@ -1,0 +1,28 @@
+footer { /* Pie de página */
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 25%;
+  margin: 50px auto;
+  box-sizing: border-box;
+}
+
+footer .footer-class { /* Pie de página */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 140px;
+  height: 180px;
+}
+
+footer .footer-class img {  /* Pie de página: imagen */
+  width: 85px;
+  height: 85px;
+  cursor: pointer;
+}
+footer .footer-class label { /* Pie de página: label */
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}

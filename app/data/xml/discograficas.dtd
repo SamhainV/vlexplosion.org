@@ -1,0 +1,8 @@
+<!ELEMENT database (#PCDATA|metadata|table)*>
+<!ELEMENT metadata (type,name,description)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT table (type,name,database,record_labels)>
+<!ELEMENT record_labels (record_label+)>
+<!ELEMENT record_label (#PCDATA)>

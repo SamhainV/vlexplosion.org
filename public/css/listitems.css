@@ -1,0 +1,84 @@
+.container { /* Añadir un contenedor para centrar el contenido */
+  background-color: #007bff;
+  padding: 10px;  
+  border-radius: 10px;
+}
+
+.table-container { /* Añadir un contenedor para la tabla */
+  max-height: 400px; 
+  overflow-y: auto;
+}
+
+.table { /* Añadir un contenedor para la tabla */
+  display: flex;
+  flex-direction: column;
+  /*width: 100px;*/
+}
+
+.table-header, /* Estilos para la cabecera de la tabla */
+.table-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center; /* Asegura que los elementos estén centrados verticalmente */
+}
+
+.table-header { /* Estilos para la cabecera de la tabla */
+  background-color: #0056b3; /* Color diferente para el encabezado */
+  font-weight: bold;
+  border-bottom: 3px solid white; /* Línea horizontal más gruesa que separa el encabezado del resto */
+}
+
+.table-row:nth-child(even) { /* Estilo para las filas pares */
+  background-color: #007bff;
+}
+
+.table-row:not(:last-child) { /* Estilo para todas las filas excepto la última */
+  border-bottom: 1px solid white; /* Línea de separación entre filas */
+}
+
+.table-cell { /* Estilos para las celdas de la tabla */
+  flex: 1;
+  text-align: center;
+  padding: 5px;
+  display: flex; /* Añadir flexbox */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  min-width: 100px; /* Ancho mínimo fijo para todas las celdas */
+}
+
+.table-cell-condition { /* Estilos para las celdas de la tabla */
+  flex: 2; /* Ajusta el ancho según sea necesario */
+  text-align: center;
+}
+
+@media (max-width: 768px) { /* Estilos para dispositivos móviles */
+  .table-header,
+  .table-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .table-cell { /* Ajustar el ancho de las celdas al 100% */
+    text-align: left;
+  }
+}
+
+/* Estilos para los enlaces */
+.table-cell a {
+  color: white;
+  text-decoration: none;
+  background-color: #0056b3;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+  margin-right: 5px; /* Añadir margen derecho */
+}
+
+.table-cell a:hover { /* Cambiar el color de fondo al pasar el mouse */
+  background-color: #004085;
+}
+
+
+
+

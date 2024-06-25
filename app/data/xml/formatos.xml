@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE database SYSTEM "formatos.dtd">
+
+<database>
+    <metadata>
+        <type>Database</type>
+        <name>VinylLibraryDB</name>
+        <description>Listado de formatos</description>
+    </metadata>
+    <table>
+        <type>Table</type>
+        <name>RECORDLABELS_TBL</name>
+        <database>VinylLibraryDB</database>
+        <formats>
+            <format>LP</format>
+            <format>Single</format>
+            <format>2 LP</format>
+            <format>Maxi Single</format>
+            <format>4 LP</format>
+        </formats>
+    </table>
+</database>

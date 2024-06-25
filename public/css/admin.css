@@ -1,0 +1,94 @@
+.user-table { /* Estilo de la tabla de usuarios */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.user-row { /* Estilo de cada fila de usuario */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+
+.user-row:last-child {  /* Eliminar el borde inferior de la última fila */
+    border-bottom: none;
+}
+
+.user-name, /* Estilo del nombre de usuario */
+.user-role,
+.user-admin {
+    flex: 1;
+    margin: 5px 0;
+    text-align: left;
+}
+
+.user-action { /* Estilo de los botones de acción */
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+
+.user-admin { /* Estilo del rol de administrador */
+    text-align: right;
+}
+
+.apply-changes { /* Estilo del formulario de cambios */
+    margin-top: 20px;
+    text-align: center;
+}
+
+.apply-changes > button[type="submit"]{ /* Estilo del botón de enviar */
+    background-color: #b6b0b6;
+    border-radius: 7px;
+    cursor: pointer;
+    letter-spacing: 6px;
+    font-size: 20px;    
+    height: 49px;
+    padding: 10px;
+}
+
+
+/* Estilo para ocultar la sección por defecto */
+.hidden {
+    display: none;
+}
+
+/* Estilo del div centrado */
+#admin-div {
+    background-color: blue;
+    color: white;
+    width: 90%;
+    max-width: 600px;
+    height: auto; /* Ajustar la altura automáticamente */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos dentro se alineen en columna */
+    justify-content: flex-start;
+    align-items: stretch;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px; /* Añadir algo de padding para espaciar los elementos */
+}
+
+/* Media queries para mejorar la responsividad */
+@media (min-width: 768px) {
+    .user-name, .user-role, .user-admin {
+        flex: 1;
+    }
+
+    .user-action {
+        flex: 0 0 auto;
+    }
+}
+
+/* Mostrar la sección cuando se hace clic en el enlace */
+#admin-usuarios:target {
+    display: block;
+}
+
+

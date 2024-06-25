@@ -1,0 +1,31 @@
+/********************************************** Etiqueta Main **********************************************/
+
+main { /* Contenedor principal */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  line-height: 0;
+}
+
+.random-image-container { /* Contenedor de la imagen aleatoria */
+  display: block;
+  width: 700px;  
+  height: auto;
+}
+
+.random-image-container img { /* Estilo de la imagen aleatoria */
+  display: block;
+  line-height: 0;
+  width: 100%;
+  border-radius: 50%;
+}
+
+#random-image {
+  transition: opacity 1s ease-in-out;
+  opacity: 0; /* Inicia con la imagen oculta para que la primera imagen se funda al cargar */
+}
+
+
+/********************************************** Fin Etiqueta Main ******************************************/

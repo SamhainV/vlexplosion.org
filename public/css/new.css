@@ -1,0 +1,116 @@
+* { /* Reset */
+  margin: 0;
+  border: 0;
+}
+
+body { /* Estilos generales */
+  position: relative;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #333;
+  color: #e0e0e0;
+}
+
+select, /* Estilos para selects */
+input {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+}
+
+section { /* Estilos para secciones */
+  width: 350px;
+  height: auto;
+  background-color: #007bff;
+  margin: 50px auto;
+  border: 1px solid black;
+  box-sizing: border-box;
+  border-radius: 7px;
+  text-align: center;
+}
+
+.entradaDatosForm { /* Estilos para el formulario de entrada de datos */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+  flex-wrap: wrap;  
+  justify-content: space-evenly;  
+}
+
+.entradaDatosForm > input, /* Estilos para inputs */
+.entradaDatosForm > select {
+  padding: 10px;
+  margin: 10px 5px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  width: calc(100% - 20px);
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.entradaDatosForm > input[type="submit"] { /* Estilos para el botón de enviar */
+  background-color: #b6b0b6;
+  border-radius: 7px;
+  cursor: pointer;
+  letter-spacing: 6px;
+  font-size: 20px;
+  width: 290px;
+  height: 49px;
+  transition: transform 0.3s ease;
+}
+
+.entradaDatosForm > input[type="submit"]:hover { /* Efecto de escala al hacer hover */
+  transform: scale(1.1);
+}
+
+.entradaDatosForm > input[type="button"] { /* Estilos para el botón de limpiar */
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 5px 0 0 10px;
+  transition: transform 0.25s, opacity 0.25s;
+  width: 10px;
+  height: 15px;
+  align-self: flex-start;
+}
+
+.entradaDatosForm > input[type="button"]:hover { /* Efecto de escala al hacer hover */
+  transform: rotate(360deg);
+}
+
+.user_menu { /* Estilos para el menú de usuario */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: #333;
+  width: 100%;
+}
+
+#contenido { /* Estilos para el contenido */
+  position: absolute;
+  top: 490px;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+}
+
+.main-container { /* Estilos para el contenedor principal */
+  display: flex;
+  width: 800px;
+  background-color: red;
+}
+
+.entradaDatosForm > label { /* Estilos para labels */
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.entradaDatosForm > label > input { /* Estilos para inputs dentro de labels */
+  margin-right: 10px;
+}

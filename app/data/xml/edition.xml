@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE database SYSTEM "edition.dtd">
+<database>
+    <metadata>
+        <type>Database</type>
+        <name>VinylLibraryDB</name>
+        <description>Edición</description>
+    </metadata>
+
+
+    <table>
+        <type>Table</type>
+        <name>EDITION_TBL</name>
+        <database>VinylLibraryDB</database>
+        <Editions>
+            <Edition>Original</Edition>
+            <Edition>Reedición</Edition>
+            <Edition>Edición Remasterizada</Edition>
+            <Edition>Edición Deluxe</Edition>
+            <Edition>Edición Limitada</Edition>
+            <Edition>Edición Expandida</Edition>
+            <Edition>Box Set / Caja Recopilatoria</Edition>
+            <Edition>Picture Disc</Edition>
+            <Edition>Edición en color</Edition>
+            <Edition>Edición Acustica</Edition>
+        </Editions>
+    </table>
+</database>

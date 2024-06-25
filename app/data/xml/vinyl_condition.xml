@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE database SYSTEM "vinyl_condition.dtd">
+<database>
+    <metadata>
+        <type>Database</type>
+        <name>VinylLibraryDB</name>
+        <description>Estado de conservación</description>
+    </metadata>
+
+
+    <!-- 
+        Mint (M): Perfecto. Sin marcas de uso, como nuevo.
+        Near Mint (NM o M-): Casi perfecto. Puede tener alguna marca de uso muy leve, pero no afecta a la
+        reproducción.
+        Excelent (EX o VG++): Excelente. Puede tener alguna marca de uso, pero no afecta a la reproducción.
+        Very good Plus (VG+): Muy bueno. Puede tener marcas de uso, pero no afecta a la reproducción.
+        Very Good (VG): Bueno. Puede tener marcas de uso, pero no afecta a la reproducción.
+        Good (G): Regular. Puede tener marcas de uso, pero no afecta a la reproducción.
+        Poor (P): Malo. Puede tener marcas de uso, pero no afecta a la reproducción.
+    -->
+
+    <table>
+        <type>Table</type>
+        <name>VINYLS_TBL</name>
+        <database>VinylLibraryDB</database>
+        <VinylConditions>
+            <VinylCondition>Mint</VinylCondition>
+            <VinylCondition>Near Mint</VinylCondition>
+            <VinylCondition>Excelent</VinylCondition>
+            <VinylCondition>Very good Plus</VinylCondition>
+            <VinylCondition>Very Good</VinylCondition>
+            <VinylCondition>Good</VinylCondition>
+            <VinylCondition>Poor</VinylCondition>
+        </VinylConditions>
+    </table>
+</database>

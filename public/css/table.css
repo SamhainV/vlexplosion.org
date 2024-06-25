@@ -1,0 +1,288 @@
+/* Reset básico para algunos elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* Estilos generales para el cuerpo del documento */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;  
+  background: #333; /* Fondo oscuro */
+  color: #e0e0e0; /* Texto claro */
+}
+
+.panel { 
+  /* Estilos para el panel */
+  background-color: #333; /* Fondo más oscuro para la clase panel */
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-top: 60px;
+}
+
+h1.text-center {
+  /* Estilos para títulos centrados */
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff; /* Texto claro para títulos */
+}
+
+.btn {
+  /* Estilos para botones */
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 10px 5px 10px 0;
+}
+
+.btn:hover {
+  /* Estilos para botones al hacer hover */
+  background-color: #0056b3;
+}
+
+.datos-container {
+  /* Contenedor para los datos */
+  display: flex;
+  flex-direction: column;
+}
+
+.fila {
+  /* Fila genérica */
+  display: flex;
+  flex-wrap: wrap;
+  background: #222; /* Fondo para cada fila */
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.celda {
+  /* Celda genérica */
+  padding: 10px;
+  flex-grow: 1;
+  flex-basis: calc(100% / 3);
+  border-right: 1px solid #444; /* Borde más claro dentro de filas oscuras */
+  border-bottom: 1px solid #444; /* Borde más claro dentro de filas oscuras */
+  color: #ddd; /* Texto claro para contenido */
+  transition: transform 0.5s ease, font-size 0.5s ease; /* Transición suave para transform y font-size */
+  font-size: 16px; /* Tamaño inicial de la fuente */
+}
+
+/****************************************************/
+/* Menu emergente al pulsar boton derecho del ratón (DESCARTADO !!!!!) */
+/****************************************************/
+.oculto {
+  /* Clase del menu */
+  display: none;
+}
+
+#menu {
+  /* Estilos para el menú emergente */
+  position: absolute;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+  text-decoration: none;  
+  display: none;
+  background-color: #444;
+  color: white;
+  border-radius: 5px;
+  flex-wrap: wrap;
+}
+
+#menu ul {
+  list-style-type: none; /* Eliminar viñetas de la lista */
+  padding: 0; /* Eliminar el relleno interno de la lista */
+  margin: 0; /* Eliminar el margen externo de la lista */
+}
+
+#menu ul li a {
+  text-decoration: none; /* Eliminar subrayado */
+  color: inherit; /* Heredar el color del texto */
+}
+
+#menu ul li:not(#menu):hover {
+  background-color: #007bff; /* Cambiar el fondo a blanco al pasar el mouse por encima */
+}
+
+#menu ul li {
+  padding: 5px 30px; /*Ajusta el padding para más separación horizontal y vertical */
+  margin-top: 5px; /*Agrega margen inferior para más separación vertical entre elementos */
+  margin-bottom: 5px; /*Agrega margen inferior para más separación vertical entre elementos */
+}
+
+/**********************************************/
+
+.celda:last-child {
+  /* Última celda de cada fila */
+  border-right: none;
+}
+
+/* Todas las celdas menos acciones. No ejecutar el hover cuando el menu emergente este activo */
+.celda:not(.acciones):not(#menu):hover {
+  transform: scale(1); /* Escala el elemento al 120% */
+  font-size: 38px; /* Aumenta el tamaño de la fuente al hacer hover */
+}
+
+.pagination {
+  /* Estilos para la paginación */
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 20px;
+}
+
+.pagination a {
+  /* Estilos para los enlaces de paginación */
+  padding: 8px 16px;
+  margin: 0 4px;
+  border: 1px solid #555; /* Borde para paginación */
+  background-color: #222; /* Fondo para enlaces de paginación */
+  color: #007bff; /* Color para texto de enlaces */
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.pagination a:hover, /* Estilos para enlaces de paginación al hacer hover */
+.pagination a.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.ejemplares {
+  display: none;
+  position: fixed; /* Posicionamiento fijo respecto al viewport */
+  top: 150px; /* Posicionado al 50% desde la parte superior del viewport */
+  left: 50%;
+  transform: translate(-50%, -50%);  
+  width: 90%; /* Ancho fijo, ajustable según tus necesidades */
+  height: 200px; /* Altura fija, ajustable según tus necesidades */
+  background-color: #444; /* Color de fondo para visualizarlo fácilmente, ajustable */
+  z-index: 1000; /* Asegura que el div esté sobre otros elementos */
+}
+
+/*********************************************************************/
+/* Estilos para la tabla list.php */
+/*********************************************************************/
+.outer-container { /* Contenedor externo */
+  width: 100%;
+  max-width: 1200px; /* Ajusta según el diseño de tu sitio */
+  margin: auto;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+.album-table-container { /* Contenedor de la tabla */
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.album-row { /* Fila de la tabla */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 0.5rem;
+}
+
+.album-cell { /* Celda de la tabla */
+  padding: 0.5rem;
+  flex: 1; /* Distribuye el espacio de manera uniforme */
+  text-align: center;
+}
+
+.album-cell:first-child { /* Ajusta la primera celda */
+  flex-basis: 100px; /* Asigna más espacio para la celda de acciones si es necesario */
+}
+
+.album-cell a.btn { /* Estilos para los botones */
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.album-cell a.btn:hover { /* Estilos para los botones al hacer hover */
+  background-color: #0056b3;
+}
+
+.album-header { /* Encabezado de la tabla */
+  display: flex;
+  background-color: #333;
+  color: white;
+}
+
+.album-header .album-cell { /* Estilos para las celdas del encabezado */
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+/* Ajustes responsive */
+
+@media (max-width: 768px) {
+  .album-row {
+    flex-wrap: wrap;
+  }
+  .album-cell {
+    flex: 1 1 50%; /* Ajusta a dos celdas por fila en dispositivos móviles */
+  }
+  .album-cell a.btn {
+    width: 100%; /* Hace que el botón se expanda al ancho completo de la celda en móviles */
+  }
+  .album-header .album-cell {
+    flex: 1 1 50%; /* Igual que las celdas normales para mantener la consistencia */
+  }
+}
+
+/*********************************************************************/
+/* FIN Estilos para la tabla list.php */
+/*********************************************************************/
+
+.album-table-container > input[type="button"] { /* Estilos para el botón de limpiar */
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 5px 0 0 10px;
+  transition: transform 0.25s, opacity 0.25s;
+  width: 10px; /* Mantén las dimensiones específicas */
+  height: 15px;
+  align-self: flex-start;
+}
+
+.album-table-container > input[type="button"]:hover { /* Efecto de rotación al hacer hover */
+  transform: rotate(360deg);
+}
+
+@media screen and (max-width: 768px) {
+  /* Estilos para pantallas de 768px o menos */
+  .celda {
+    flex-basis: 50%;
+  }
+
+  .btn {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .celda {
+    flex-basis: 100%;
+  }
+}

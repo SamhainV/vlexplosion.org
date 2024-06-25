@@ -1,0 +1,40 @@
+* {
+  /* Reset de márgenes y padding */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-width: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  /* Estilos generales del body */
+  background-color: black;
+  min-height: 100dvh;
+}
+
+body::before {
+  /* Fondo de pantalla */
+  min-height: 100dvh;
+  margin: 0;
+  padding: 0;
+  content: "";
+  position: fixed; /* Fixed position to cover the entire viewport */
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100dvh;
+
+  background-image: url("../images/photo_fondo.jpg"); /* Añade la URL de la imagen */
+  background-size: cover; /* La imagen cubre todo el espacio */
+  background-repeat: no-repeat;
+
+  opacity: 0.2; /* Ajusta la opacidad según necesites */
+  z-index: -1; /* Coloca el fondo detrás del contenido del body */
+}
+
+ul li {
+  /* Estilos para la lista de elementos */
+  display: inline;
+  padding: 5px;
+}

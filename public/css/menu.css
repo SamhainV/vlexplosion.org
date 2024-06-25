@@ -1,0 +1,72 @@
+/* Estilo general del dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  left: 15px;
+  top: 10px;
+}
+
+/* Estilo del botón principal */
+.dropbtn {
+  background-color: #007bff; /* Color de fondo */
+  color: white; /* Color del texto */
+  padding: 16px; /* Relleno */
+  font-size: 16px; /* Tamaño de fuente */
+  border: none; /* Sin bordes */
+  cursor: pointer; /* Cursor en forma de mano */
+  border-radius: 5px;
+}
+
+/* Contenedor del contenido desplegable */
+.dropdown-content,
+.sub-dropdown-content {
+  display: none; /* Ocultar contenido por defecto */
+  position: absolute; /* Posicionamiento absoluto */
+  background-color: #333; /* Color de fondo */
+  min-width: 181px; /* Ancho mínimo */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Sombra para 3D visual */
+  z-index: 1; /* Asegura que se muestre sobre otros contenidos */
+}
+
+/* Estilos de los links dentro del desplegable */
+.dropdown-content a,
+.sub-dropdown-content a {
+  color: white; /* Color del texto */
+  padding: 12px 16px; /* Relleno */
+  text-decoration: none; /* Sin subrayado */
+  display: block; /* Mostrar como bloque */
+  text-align: left; /* Alinear texto a la izquierda */
+  min-width: 160px; /* Ancho mínimo */
+}
+
+/* Cambiar el color de fondo de los items al pasar el ratón */
+.dropdown-content a:hover {
+  background-color: #444;
+}
+.sub-dropdown-content a:hover {
+  background-color: #007bff;
+}
+
+/* Mostrar el contenido desplegable al pasar el ratón */
+.dropdown:hover .dropdown-content,
+.sub-dropdown:hover .sub-dropdown-content {
+  display: block;
+}
+
+/* Estilo del submenú para que se despliegue a la derecha */
+.sub-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.sub-dropdown-content {
+  left: 100%; /* Posicionar a la derecha del menú de género */
+  top: 0; /* Alinear con el elemento padre */
+  min-width: 254px; /* Ancho mínimo del submenú */
+  line-height: 0px;
+}
+
+/* Cambiar el color de fondo del botón al pasar el ratón */
+.dropdown:hover .dropbtn {
+  background-color: #007bff;
+}

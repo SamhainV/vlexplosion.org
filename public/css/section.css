@@ -1,0 +1,49 @@
+.bloque_section { /* Estilos para secciones */
+  position: relative;
+  width: 100vw;
+  margin: 50px auto;
+  height: calc(100vh - 300px);
+  background: lightpink;
+}
+
+.izquierda { /* Estilos para la seccion izquierda */
+  float: left;
+  width: calc(100vw / 4);
+  height: 400px;
+  background: lightcoral;
+  overflow: scroll;
+  
+}
+
+.derecha { /* Estilos para la seccion derecha */
+  float: left;  
+  width: calc((100vw - (100vw / 4)) - 0px);
+  height: 400px;
+  background: lightcyan;
+  overflow: scroll;
+  filter:blur(1px);  
+}
+
+
+.contenedor { /* Estilos para el contenedor de la imagen */
+  width: 100px; 
+  height: 100px;
+  position: relative;
+  
+}
+
+.contenedor img { /* Estilos para la imagen */
+  width: 100%;
+  height: 100%;
+  animation: rotar 1.8181818s linear infinite; 
+  border-radius: 50px;
+}
+
+@keyframes rotar { /* Animación para rotar la imagen */
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg); /* 360 grados para una rotación completa */
+  }
+}

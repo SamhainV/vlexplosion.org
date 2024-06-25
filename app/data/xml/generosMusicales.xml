@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE database SYSTEM "generosMusicales.dtd">
+<database>
+    <metadata>
+        <type>Database</type>
+        <name>VinylLibraryDB</name>
+        <description>Listado de los posible generos musicales</description>
+    </metadata>
+    <table>
+        <type>Table</type>
+        <name>GENRES_TBL</name>
+        <database>VinylLibraryDB</database>
+        <genres>
+            <genre>American Rock Band</genre>
+            <genre>American Singer</genre>
+            <genre>Black Metal</genre>
+            <genre>British rock</genre>
+            <genre>Cantautor Español</genre>
+            <genre>Compositor Britanico</genre>
+            <genre>Doo wop</genre>
+            <genre>Garage Rock</genre>
+            <genre>Ghotic Rock</genre>
+            <genre>Hard Rock</genre>
+            <genre>Heavy Metal</genre>
+            <genre>Indie</genre>
+            <genre>Jazz Rock</genre>
+            <genre>Metal Alternativo</genre>
+            <genre>Musica Clasica</genre>
+            <genre>Música Electrónica</genre>
+            <genre>New Wave</genre>
+            <genre>Oi!</genre>
+            <genre>Pop</genre>
+            <genre>Pop Punk</genre>
+            <genre>Pop/Rock Español</genre>
+            <genre>Post Punk</genre>
+            <genre>Power Pop</genre>
+            <genre>Psychedelic Rock</genre>
+            <genre>Psychobilly</genre>
+            <genre>Punk</genre>
+            <genre>Punk Rock</genre>
+            <genre>Rhythm and Blues</genre>
+            <genre>Rock</genre>
+            <genre>Rock Alternativo</genre>
+            <genre>Rock Progresivo</genre>
+            <genre>Rock sinfónico</genre>
+            <genre>Rock&amp;Roll 50&apos;s</genre>
+            <genre>Rockabilly</genre>
+            <genre>Ska</genre>
+            <genre>Soft Rock</genre>
+            <genre>Soul</genre>
+            <genre>Surf</genre>
+            <genre>Synth Pop / New Wave</genre>
+        </genres>
+    </table>
+</database>

@@ -1,0 +1,95 @@
+.ag-format-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.ag-courses_box { /* Estilo del contenedor de las tarjetas */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;  
+}
+
+.ag-courses_item { /* Estilo de cada tarjeta */
+  flex-basis: calc(303px - 30px);  
+  margin: 0 15px 30px;
+  overflow: hidden;
+  border-radius: 28px;  
+}
+
+.ag-courses-item_link {  /* Estilo del enlace de cada tarjeta */
+  display: block;
+  padding: 30px 20px;
+  background-color: #121212;
+  overflow: hidden;
+  text-decoration: none;
+  position: relative;
+}
+
+.ag-courses-item_link:hover, /* Estilo del enlace de cada tarjeta al pasar el mouse */
+.ag-courses-item_link:hover .ag-courses-item_date {
+  text-decoration: none;
+  color: #fff;
+}
+
+.ag-courses-item_link:hover .ag-courses-item_bg { /* Estilo del fondo de cada tarjeta al pasar el mouse */
+  transform: scale(10);
+}
+
+.ag-courses-item_title {  /* Estilo del título de cada tarjeta */
+  min-height: 87px;
+  margin: 0 0 25px;
+  overflow: hidden;  
+  font-size: 16px;
+  color: #fff;
+  z-index: 2;
+  position: relative;
+}
+
+.ag-courses-item_date-box {  /* Estilo de la caja de la fecha de cada tarjeta */
+  font-size: 14px;
+  color: #fff;
+  z-index: 2;
+  position: relative;
+}
+
+.ag-courses-item_date {  /* Estilo de la fecha de cada tarjeta */
+  color: #f9b234;
+  transition: color 0.5s ease;
+}
+
+.ag-courses-item_bg { /* Estilo del fondo de cada tarjeta */
+  height: 128px;
+  width: 128px;
+  background-color: #f9b234;
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+.ag-courses_item:nth-child(2n) .ag-courses-item_bg { /* Estilo del fondo de cada tarjeta en posición par */
+  background-color: #3ecd5e;
+}
+.ag-courses_item:nth-child(3n) .ag-courses-item_bg { /* Estilo del fondo de cada tarjeta en posición impar */
+  background-color: #e44002;
+}
+.ag-courses_item:nth-child(4n) .ag-courses-item_bg { /* Estilo del fondo de cada tarjeta en posición múltiplo de 4 */
+  background-color: #952aff;
+}
+.ag-courses_item:nth-child(5n) .ag-courses-item_bg { /* Estilo del fondo de cada tarjeta en posición múltiplo de 5 */
+  background-color: #cd3e94;
+}
+.ag-courses_item:nth-child(6n) .ag-courses-item_bg { /* Estilo del fondo de cada tarjeta en posición múltiplo de 6 */
+  background-color: #4c49ea;
+}
+
+.ag-format-container img { /* Estilo de la imagen del div centrado */
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}

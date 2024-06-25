@@ -1,0 +1,47 @@
+Estructura de directorios 
+
+MVC - MVC utilizamos el enrutamiento basado en acciones o enrutamiento parámetrico.
+DAO - Capa de acceso a datos.
+
+.
+├── app
+│   ├── controller
+│   ├── data
+│   │   └── xml
+│   ├── model
+│   └── view
+├── core
+│   ├── config
+│   └── database
+├── dao
+│   ├── implementations
+│   └── interfaces
+└── public
+    ├── css
+    ├── images
+    └── js
+
+------------------------------------------------------------------------------------
+
+Detalles:
+
+/app
+    /controller: Controladores para manejar las peticiones, se comunican con los modelos DAO y seleccionan las vistas.
+    /model: Clases que representan las entidades.
+    /view: Parte visual de la aplicación.
+/core
+    /config: Archivos de configuración.
+    /database: Conexión y manejo de la BBDD.
+    /router: Sistema de enrutamiento que maneja las URL paramétricas.
+/dao
+    /interfaces: Interfaces para definir las operaciones de los DAOs.
+    /implementations: Implementaciones concretas de las interfaces DAO.
+/public
+    index.php: Punto de entrada de la aplicación.
+    /css: Hojas de estilo.
+    /js: Scripts.
+    /images: Imágenes.
+
+-------------------------------------------------------------------------------------
+
+Las clases Usuario, Rol, etc que representen entidades, van en el directorio /app/model

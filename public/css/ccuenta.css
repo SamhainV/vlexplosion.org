@@ -1,0 +1,92 @@
+
+/* Reset básico para margin y padding para todos los elementos */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Asegura que padding y border se incluyan en el ancho/altura total */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos básicos del cuerpo */
+body {
+  background-color: rgb(87, 55, 55);
+}
+
+/* Estilo para el contenedor de creación de cuenta */
+#create-account {
+  width: 330px;
+  height: auto;
+  background-color: white;
+  margin: 200px auto;
+  margin-bottom: 100px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* Estilo general para formularios */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  align-items: center;
+}
+
+/* Estilo para los títulos dentro de formularios */
+h1 {
+  text-align: center;
+  line-height: 70px;
+  color: black;
+}
+
+/* Estilos comunes para inputs de texto, email, y password */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 75%;
+  padding: 16px 32px;
+  margin: 14px 2px;
+  border: none;
+  border-bottom: 1px solid black;
+  color: black;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+
+/* Estilos específicos para el botón de enviar */
+input[type="submit"] {
+  width: 75%;
+  padding: 16px 32px;
+  margin-top: 30px;
+  background-color: #43aadf;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform .2s; /* Suaviza la transformación al hacer hover */
+  margin-bottom: 20px;
+}
+
+/* Efecto de escala para el botón de enviar al hacer hover */
+input[type="submit"]:hover {
+  transform: scale(1.1);
+}
+
+/* Estilo para los placeholders de los inputs */
+::placeholder {
+  color: lightgray;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover {
+  background-color: rgb(237, 237, 243);
+}
+
+@media only screen and (max-width: 600px) {
+  #create-account {
+    margin: 20px auto;
+  }
+  
+}
