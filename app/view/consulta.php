@@ -7,7 +7,11 @@ ini_set('display_startup_errors', 1);
 
 $apiKey = '523532';
 $artista = urlencode($_GET['artista']);
+$_GET['album'] = 'Memento Mori';
+
+
 $album = urlencode($_GET['album']);
+
 
 function removePrefix($url, $prefix) {
     if (substr($url, 0, strlen($prefix)) === $prefix) {
