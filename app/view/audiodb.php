@@ -20,6 +20,7 @@ require_once(BASE_DIR . 'dao/implementations/GenresDAO.php'); // DAO de vinilos
 var_dump($_GET);
 echo "<br>";
 var_dump($_SESSION);
+
 $usuario = $_SESSION['username'];
 $vinylId = $_GET['IdAutor'];
 
@@ -34,7 +35,7 @@ $vinilo = new Vinyl($pdo, $vinylId);
 $dato = $vinilo->vinylAuthorDAO->getCompleteVinylDetailsByVinylIdAndUsername($vinylId, $usuario);
 
 var_dump($dato);
-
+exit;
 echo "<br>";
 echo "<br>";
 
