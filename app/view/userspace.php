@@ -76,6 +76,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <?php
     $dato = $usuario->vinyl->getRecords($userName,  null); // Obtenemos los discos del usuario
+    
     ?>
     <!--
         Item Listar generos musicales del usuario, del submenu usuario logueado.
