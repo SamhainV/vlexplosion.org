@@ -103,9 +103,9 @@ class vinylCtrl
         exit();
     }
 
-    public function consulta()
+    /*public function consulta()
     {       
         require_once(BASE_DIR . "app/view/consulta.php");
         exit();
-    }
+    }*/
 }
